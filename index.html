@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#063d2e">
+  <meta name="description" content="Tiãozinho Jardinagem, Limpeza e Serviços Gerais em Carazinho - RS. Corte de grama, podas, roçadas, limpeza de terrenos, pátios e muito mais. Solicite seu orçamento pelo WhatsApp.">
+  <title>Tiãozinho | Jardinagem, Limpeza e Serviços Gerais</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#063d2e;--green2:#07583d;--lime:#a8df16;--yellow:#ffc629;--ink:#14221b;--muted:#64736b;--paper:#f6f8f4;--white:#fff;--shadow:0 18px 50px rgba(2,35,24,.13);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topline{height:5px;background:linear-gradient(90deg,var(--lime),var(--yellow),var(--lime))}
+    header{position:sticky;top:0;z-index:20;background:rgba(3,34,25,.96);backdrop-filter:blur(14px);box-shadow:0 5px 24px rgba(0,0,0,.13)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;color:#fff;min-width:0}.brand-mark{width:54px;height:54px;flex:none}.brand-name{font:900 25px/1 "Montserrat",sans-serif;letter-spacing:-1.2px}.brand-sub{display:block;margin-top:5px;color:var(--lime);font-size:10px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}
+    .navlinks{display:flex;align-items:center;gap:30px;color:#e7eee9;font-size:14px;font-weight:700}.navlinks a{transition:.2s}.navlinks a:hover{color:var(--lime)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;background:var(--lime);color:#092c20;font-weight:800;padding:14px 21px;box-shadow:0 8px 24px rgba(168,223,22,.2);transition:transform .2s,filter .2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.nav-cta{padding:12px 17px;font-size:13px}.nav-cta svg,.btn svg{width:19px;height:19px}
+    .menu-toggle{display:none;background:none;border:0;color:#fff;font-size:27px}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:620px;display:flex;align-items:center;background:#052b20 url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=2000&q=85") center 48%/cover no-repeat}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,31,22,.94) 0%,rgba(2,45,30,.83) 47%,rgba(2,40,27,.36) 100%)}
+    .hero:after{content:"";position:absolute;z-index:-1;left:-8%;right:-8%;bottom:-100px;height:150px;background:#fff;border-radius:50% 50% 0 0}
+    .hero-content{padding:88px 0 125px;max-width:760px;color:#fff}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(168,223,22,.55);background:rgba(168,223,22,.12);color:#d8ff75;border-radius:999px;padding:9px 14px;font-size:12px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
+    .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime)}
+    h1,h2,h3{font-family:"Montserrat",sans-serif}h1{font-size:clamp(42px,6.5vw,76px);line-height:1.03;letter-spacing:-3px;margin:24px 0 20px;font-weight:900}h1 span{color:var(--lime)}.hero p{font-size:18px;line-height:1.7;color:#e0ebe4;max-width:610px;margin:0 0 30px}.hero-actions{display:flex;flex-wrap:wrap;gap:13px}.btn{padding:16px 23px;font-size:15px}.btn-outline{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.42);color:#fff;box-shadow:none}.btn-outline:hover{background:rgba(255,255,255,.15)}
+    .hero-points{display:flex;flex-wrap:wrap;gap:22px;margin-top:36px;color:#e8f1eb;font-size:13px;font-weight:700}.hero-points span{display:flex;align-items:center;gap:8px}.check{color:var(--lime);font-size:17px}
+    .trust-strip{position:relative;margin-top:-32px;z-index:2}.trust-grid{background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:24px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.trust-item{display:flex;align-items:center;gap:13px}.trust-icon{width:46px;height:46px;display:grid;place-items:center;flex:none;border-radius:14px;background:#eff8d9;color:var(--green);font-size:22px}.trust-item strong{display:block;font-size:14px}.trust-item small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+    section{padding:92px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.kicker{color:#4c7a19;text-transform:uppercase;font-size:12px;letter-spacing:2px;font-weight:900}.section-head h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.7px;margin:12px 0;color:var(--green)}.section-head p{margin:0;color:var(--muted);font-size:16px;line-height:1.7}
+    .services{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}.service-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(9,53,36,.07);transition:transform .25s,box-shadow .25s}.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.service-photo{height:168px;overflow:hidden;background:#dce9d6}.service-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.service-card:hover .service-photo img{transform:scale(1.06)}.service-info{padding:19px 18px 21px}.service-info h3{font-size:17px;color:var(--green);margin:0 0 8px}.service-info p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.about-visual{position:relative;min-height:430px;border-radius:26px;overflow:hidden;background:#dfe9dc}.about-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.about-visual:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,30,18,.65))}.about-stamp{position:absolute;z-index:1;bottom:24px;left:24px;background:var(--yellow);color:#18301e;border-radius:14px;padding:14px 18px;font-weight:900;box-shadow:var(--shadow)}.about-copy h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-1.7px;color:var(--green);margin:12px 0 18px}.about-copy p{color:var(--muted);line-height:1.8}.benefits{list-style:none;padding:0;margin:24px 0 30px;display:grid;gap:13px}.benefits li{display:flex;gap:11px;align-items:flex-start;font-weight:700;font-size:14px}.benefits b{width:23px;height:23px;display:grid;place-items:center;flex:none;background:#eaf6ce;color:var(--green);border-radius:50%}
+    .gallery{background:#fff}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:210px 210px;gap:15px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:17px}.gallery-grid img:first-child{grid-row:span 2}
+    .contact{background:var(--green);color:#fff;position:relative;overflow:hidden}.contact:before{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(168,223,22,.15);border-radius:50%;right:-150px;top:-220px;box-shadow:0 0 0 50px rgba(168,223,22,.035),0 0 0 100px rgba(168,223,22,.025)}.contact-grid{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:55px;align-items:center}.contact h2{font-size:clamp(32px,4.5vw,48px);letter-spacing:-1.8px;line-height:1.1;margin:12px 0 17px}.contact-copy p{color:#d4e3d9;line-height:1.75;max-width:520px}.contact-details{display:grid;gap:17px;margin-top:27px}.contact-line{display:flex;gap:14px;align-items:center;color:#e9f2ec}.contact-line .bubble{width:44px;height:44px;display:grid;place-items:center;flex:none;border-radius:14px;background:rgba(168,223,22,.15);color:var(--lime);font-size:20px}.contact-line strong{display:block;font-size:14px}.contact-line small{display:block;color:#b9cfc1;margin-top:4px}.contact-card{background:#fff;color:var(--ink);border-radius:23px;padding:30px;box-shadow:0 22px 60px rgba(0,0,0,.2)}.contact-card h3{font-size:22px;color:var(--green);margin:0 0 9px}.contact-card p{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 21px}.contact-card .btn{width:100%;background:#1cba61;color:#fff;box-shadow:none}.contact-card .fine{font-size:11px;color:#7b8981;text-align:center;margin:14px 0 0}
+    footer{background:#02271d;color:#d3e0d7;padding:30px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:10px}.footer-brand .brand-name{font-size:20px}.footer-brand .brand-sub{font-size:9px}.footer-note{font-size:12px;color:#9db5a6}.footer-links{display:flex;gap:19px;font-size:12px;font-weight:700}.footer-links a:hover{color:var(--lime)}
+    .float-wa{position:fixed;right:20px;bottom:20px;z-index:25;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1cba61;color:white;box-shadow:0 9px 30px rgba(0,0,0,.24);transition:transform .2s}.float-wa:hover{transform:scale(1.08)}.float-wa svg{width:28px;height:28px}
+    @media(max-width:900px){.navlinks{gap:17px}.nav-cta{display:none}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:34px}.contact-grid{gap:30px}.hero{min-height:590px}}
+    @media(max-width:650px){.container{width:min(100% - 30px,560px)}.nav{height:72px}.brand-mark{width:47px;height:47px}.brand-name{font-size:21px}.brand-sub{font-size:8px;letter-spacing:1.2px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;padding:20px 22px 24px;background:#032b20;flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.1)}.hero{min-height:620px;background-position:57% center}.hero:before{background:linear-gradient(90deg,rgba(2,31,22,.93),rgba(2,42,28,.76))}.hero-content{padding:76px 0 120px}h1{font-size:46px;letter-spacing:-2px}.hero p{font-size:16px}.hero-points{gap:12px 17px}.trust-grid{grid-template-columns:1fr;padding:20px;gap:17px}.trust-strip{margin-top:-28px}section{padding:70px 0}.section-head{margin-bottom:30px}.service-grid{gap:12px}.service-photo{height:135px}.service-info{padding:15px 13px 17px}.service-info h3{font-size:15px}.service-info p{font-size:12px}.about-grid,.contact-grid{grid-template-columns:1fr}.about-visual{min-height:310px;order:2}.about-copy{order:1}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:170px 150px 150px}.gallery-grid img:first-child{grid-row:span 2}.gallery-grid img:last-child{grid-column:span 2}.contact-card{padding:24px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.float-wa{width:54px;height:54px;right:14px;bottom:14px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Tiãozinho - início">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 50C10 27 25 10 48 8c-2 13-9 23-21 29C18 42 12 47 8 50Z" fill="#a8df16"/><path d="M14 55c11-13 22-21 39-25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M35 11c-1 9 1 16 8 21" fill="none" stroke="#063d2e" stroke-width="2.5" stroke-linecap="round"/><path d="M8 55h49" stroke="#ffc629" stroke-width="3" stroke-linecap="round"/><circle cx="43" cy="47" r="5" fill="#fff"/><circle cx="55" cy="47" r="5" fill="#fff"/><path d="M36 44h22l-3-8H42Z" fill="#a8df16" stroke="#fff" stroke-width="1.5"/></svg>
+        <span><span class="brand-name">Tiãozinho</span><span class="brand-sub">Jardinagem • Limpeza • Serviços gerais</span></span>
+      </a>
+      <nav class="navlinks" id="navlinks" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+      </nav>
+      <a class="nav-cta" href="https://wa.me/555499077553?text=Ol%C3%A1%2C%20Tiaozinho!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.6 2.3 2 3.7 4.3 4.3l1.2-1.2 2 1c-.2 1.4-1.2 2.2-2.6 2.1-3.7-.4-6.6-3.3-7-7-.1-1.4.7-2.4 2.1-2.6l1 2-1 1.4Z"/></svg> Pedir orçamento</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container"><div class="hero-content">
+        <span class="eyebrow"><i></i> Carazinho • Rio Grande do Sul</span>
+        <h1>Seu espaço mais <span>bonito, limpo</span> e bem cuidado.</h1>
+        <p>Jardinagem, limpeza e serviços gerais para deixar seu pátio, terreno e jardim do jeito que você gosta. Conte com o Tiãozinho!</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/555499077553?text=Ol%C3%A1%2C%20Tiaozinho!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.6 2.3 2 3.7 4.3 4.3l1.2-1.2 2 1c-.2 1.4-1.2 2.2-2.6 2.1-3.7-.4-6.6-3.3-7-7-.1-1.4.7-2.4 2.1-2.6l1 2-1 1.4Z"/></svg> Solicitar orçamento</a>
+          <a class="btn btn-outline" href="#servicos">Conhecer serviços <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-points"><span><b class="check">✓</b> Orçamento sem compromisso</span><span><b class="check">✓</b> Atendimento direto</span><span><b class="check">✓</b> Carazinho - RS</span></div>
+      </div></div>
+    </section>
+
+    <div class="trust-strip"><div class="container"><div class="trust-grid">
+      <div class="trust-item"><div class="trust-icon">🌱</div><div><strong>Cuidado com cada espaço</strong><small>Jardins, pátios e terrenos</small></div></div>
+      <div class="trust-item"><div class="trust-icon">🧹</div><div><strong>Serviços variados</strong><small>Do corte de grama à limpeza</small></div></div>
+      <div class="trust-item"><div class="trust-icon">💬</div><div><strong>Fale direto com o Tiãozinho</strong><small>Peça seu orçamento pelo WhatsApp</small></div></div>
+    </div></div></div>
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-head"><span class="kicker">Como podemos ajudar</span><h2>Serviços para cuidar do seu espaço</h2><p>Manutenção, limpeza e jardinagem com atenção aos detalhes. Escolha o serviço e fale com a gente para solicitar seu orçamento.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1599685315640-8ecf5dca0d6a?auto=format&fit=crop&w=700&q=80" alt="Gramado verde recém-cortado"></div><div class="service-info"><h3>Corte de grama</h3><p>Deixe o gramado aparado e com aparência bem cuidada.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-剪?auto=format&fit=crop&w=700&q=80" alt="Poda e cuidado de árvores"></div><div class="service-info"><h3>Poda de árvores</h3><p>Cuidados e podas para manter árvores e arbustos organizados.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Área verde e terreno"></div><div class="service-info"><h3>Limpeza de terrenos</h3><p>Limpeza e organização de áreas externas e terrenos.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=700&q=80" alt="Jardim com plantas e canteiros"></div><div class="service-info"><h3>Capina</h3><p>Remoção de mato e ervas daninhas em áreas externas.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Pessoa cuidando de plantas no jardim"></div><div class="service-info"><h3>Jardinagem</h3><p>Cuidados para manter seu jardim bonito e agradável.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80" alt="Pátio residencial limpo"></div><div class="service-info"><h3>Limpeza de pátios</h3><p>Mais limpeza e organização para áreas externas da sua casa.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=700&q=80" alt="Manutenção de gramado com equipamento"></div><div class="service-info"><h3>Roçadas</h3><p>Roçada de vegetação e manutenção de áreas com mato alto.</p></div></article>
+          <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=80" alt="Ferramentas para serviços e manutenção"></div><div class="service-info"><h3>Serviços gerais</h3><p>Conte com o Tiãozinho para outros cuidados e serviços do dia a dia.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container about-grid">
+        <div class="about-visual"><img loading="lazy" src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1100&q=85" alt="Jardim com gramado bem cuidado"><div class="about-stamp">🌿 Seu espaço em boas mãos</div></div>
+        <div class="about-copy"><span class="kicker">Sobre o trabalho</span><h2>Mais cuidado, limpeza e capricho em cada serviço.</h2><p>O Tiãozinho oferece serviços de jardinagem, limpeza e manutenção de áreas externas em Carazinho - RS. A ideia é simples: ajudar você a manter seu espaço organizado, agradável e bem cuidado.</p><ul class="benefits"><li><b>✓</b> Atendimento direto e personalizado</li><li><b>✓</b> Diversas opções de serviços em um só lugar</li><li><b>✓</b> Orçamento conversado conforme a necessidade</li><li><b>✓</b> Contato fácil pelo WhatsApp</li></ul><a class="btn" href="https://wa.me/555499077553?text=Ol%C3%A1%2C%20Tiaozinho!%20Quero%20conversar%20sobre%20um%20servi%C3%A7o." target="_blank" rel="noopener">Conversar com o Tiãozinho <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="container"><div class="section-head"><span class="kicker">Inspiração para seu espaço</span><h2>Um ambiente bem cuidado faz a diferença</h2><p>Veja algumas referências de jardins, gramados e áreas externas bem cuidadas.</p></div>
+        <div class="gallery-grid">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85" alt="Plantas e folhagens em jardim">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=700&q=80" alt="Jardim com canteiros">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Cuidados com plantas">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80" alt="Plantas ornamentais">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="Área verde arborizada">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy"><span class="kicker" style="color:var(--lime)">Vamos conversar?</span><h2>Seu jardim ou pátio precisa de uma atenção?</h2><p>Entre em contato, conte o que você precisa e solicite um orçamento sem compromisso. O Tiãozinho atende em Carazinho - RS.</p>
+          <div class="contact-details">
+            <div class="contact-line"><div class="bubble">☎</div><div><strong>WhatsApp</strong><small>(54) 9907-7553</small></div></div>
+            <div class="contact-line"><div class="bubble">⌖</div><div><strong>Endereço</strong><small>Rua Jornalista E. Ruwer, Carazinho - RS</small></div></div>
+          </div>
+        </div>
+        <div class="contact-card"><h3>Peça seu orçamento</h3><p>Chame pelo WhatsApp e explique qual serviço deseja. Vamos conversar!</p><a class="btn" href="https://wa.me/555499077553?text=Ol%C3%A1%2C%20Tiaozinho!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.6 2.3 2 3.7 4.3 4.3l1.2-1.2 2 1c-.2 1.4-1.2 2.2-2.6 2.1-3.7-.4-6.6-3.3-7-7-.1-1.4.7-2.4 2.1-2.6l1 2-1 1.4Z"/></svg> Chamar no WhatsApp</a><p class="fine">Atendimento direto • Carazinho - RS</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-row">
+    <a class="footer-brand" href="#inicio"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 50C10 27 25 10 48 8c-2 13-9 23-21 29C18 42 12 47 8 50Z" fill="#a8df16"/><path d="M14 55c11-13 22-21 39-25" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M8 55h49" stroke="#ffc629" stroke-width="3" stroke-linecap="round"/></svg><span><span class="brand-name">Tiãozinho</span><span class="brand-sub">Jardinagem • Limpeza • Serviços gerais</span></span></a>
+    <div class="footer-links"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></div>
+    <div class="footer-note">© <span id="year"></span> Tiãozinho. Todos os direitos reservados.</div>
+  </div></footer>
+
+  <a class="float-wa" href="https://wa.me/555499077553?text=Ol%C3%A1%2C%20Tiaozinho!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com Tiãozinho pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.2c.6 2.3 2 3.7 4.3 4.3l1.2-1.2 2 1c-.2 1.4-1.2 2.2-2.6 2.1-3.7-.4-6.6-3.3-7-7-.1-1.4.7-2.4 2.1-2.6l1 2-1 1.4Z"/></svg></a>
+  <script>
+    const menuToggle=document.getElementById('menuToggle');
+    const navlinks=document.getElementById('navlinks');
+    menuToggle.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰';});
+    navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
